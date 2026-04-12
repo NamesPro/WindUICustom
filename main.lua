@@ -2809,7 +2809,7 @@ az.AnchorPoint=Vector2.new(0,1)
 end
 
 if ag.KeySystem.URL then
-ae("Get key","key",function()
+ae("Buy key","key",function()
 setclipboard(ag.KeySystem.URL)
 end,"Secondary",ax.Frame)
 end
