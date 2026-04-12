@@ -998,7 +998,6 @@ F.Y.Offset+J.Y
 ),
 }):Play()
 end
-
 for H,J in pairs(x)do
 J.InputBegan:Connect(function(L)
 if
@@ -2810,7 +2809,7 @@ az.AnchorPoint=Vector2.new(0,1)
 end
 
 if ag.KeySystem.URL then
-ae("Buy key","key",function()
+ae("Get key","key",function()
 setclipboard(ag.KeySystem.URL)
 end,"Secondary",ax.Frame)
 end
@@ -3054,8 +3053,14 @@ al:Close()()
 task.wait(0.4)
 ai(true)
 end
+else
+-- ag.WindUI:Notify{
+-- Title="Key System. Error",
+-- Content="Invalid key.",
+-- Icon="triangle-alert",
+-- }
 end
-if not ag.KeySystem.API then
+elseif not ag.KeySystem.API then
 local b=type(ag.KeySystem.Key)=="table"and table.find(ag.KeySystem.Key,aA)
 or ag.KeySystem.Key==aA
 
@@ -9982,7 +9987,6 @@ al,
 am.Elements,
 aj.Window,
 aj.WindUI,
-
 
 
 
